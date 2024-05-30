@@ -26,15 +26,15 @@ exports_files(glob([
 filegroup(
     name = "clang",
     srcs = [
-        "bin/clang",
-        "bin/clang++",
-        "bin/clang-cpp",
+        "bin/clang%{exe}",
+        "bin/clang++%{exe}",
+        "bin/clang-cpp%{exe}",
     ],
 )
 
 filegroup(
     name = "ld",
-    srcs = glob(["bin/ld.lld", "bin/ld64.lld"]),
+    srcs = glob(["bin/ld.lld%{exe}", "bin/ld64.lld%{exe}"]),
 )
 
 filegroup(
@@ -78,63 +78,63 @@ filegroup(
 
 filegroup(
     name = "ar",
-    srcs = ["bin/llvm-ar"],
+    srcs = ["bin/llvm-ar%{exe}"],
 )
 
 filegroup(
     name = "as",
     srcs = [
-        "bin/clang",
-        "bin/llvm-as",
+        "bin/clang%{exe}",
+        "bin/llvm-as%{exe}",
     ],
 )
 
 filegroup(
     name = "nm",
-    srcs = ["bin/llvm-nm"],
+    srcs = ["bin/llvm-nm%{exe}"],
 )
 
 filegroup(
     name = "objcopy",
-    srcs = ["bin/llvm-objcopy"],
+    srcs = ["bin/llvm-objcopy%{exe}"],
 )
 
 filegroup(
     name = "objdump",
-    srcs = ["bin/llvm-objdump"],
+    srcs = ["bin/llvm-objdump%{exe}"],
 )
 
 filegroup(
     name = "profdata",
-    srcs = ["bin/llvm-profdata"],
+    srcs = ["bin/llvm-profdata%{exe}"],
 )
 
 filegroup(
     name = "dwp",
-    srcs = ["bin/llvm-dwp"],
+    srcs = ["bin/llvm-dwp%{exe}"],
 )
 
 filegroup(
     name = "ranlib",
-    srcs = ["bin/llvm-ranlib"],
+    srcs = ["bin/llvm-ranlib%{exe}"],
 )
 
 filegroup(
     name = "readelf",
-    srcs = ["bin/llvm-readelf"],
+    srcs = ["bin/llvm-readelf%{exe}"],
 )
 
 filegroup(
     name = "strip",
-    srcs = ["bin/llvm-strip"],
+    srcs = ["bin/llvm-strip%{exe}"],
 )
 
 filegroup(
     name = "symbolizer",
-    srcs = ["bin/llvm-symbolizer"],
+    srcs = ["bin/llvm-symbolizer%{exe}"],
 )
 
 filegroup(
     name = "clang-tidy",
-    srcs = ["bin/clang-tidy"],
+    srcs = ["bin/clang-tidy%{exe}"],
 )
